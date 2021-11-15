@@ -84,7 +84,8 @@ class master_coverage extends uvm_subscriber#(master_tx);
       bins dw_128b[] : [64:128];
   
     BAUD_RATE : coverpoint cfg.baudrate {
-
+      option.comment = "it control the rate of transfer in communication channel";
+      bins baudrate = 2; 
       // need to add bins for baud rate 
 
     }
